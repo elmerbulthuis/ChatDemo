@@ -1,0 +1,29 @@
+version: "0.2"
+words:
+  - codegen
+  - enhanceable
+  - esbenp
+  - fanout
+  - fileoverview
+  - goodrouter
+  - googleapis
+  - grpcweb
+  - grpcwebtext
+  - iife
+  - jspb
+  - nocheck
+  - oneof
+  - oneofs
+  - openapi
+  - pacman
+  - proto
+  - protobuf
+  - protoc
+  - Trpc
+  - untar
+  - urql
+useGitignore: true
+files:
+  - "**"
+enableFiletypes:
+  - "*"

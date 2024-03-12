@@ -1,0 +1,51 @@
+{
+  "name": "chat-api-gql",
+  "private": true,
+  "description": "chat demo api gql",
+  "type": "module",
+  "bin": {
+    "chat-api-gql": "bin/chat-api-gql"
+  },
+  "main": "out/main.js",
+  "types": "out/main.d.ts",
+  "files": [
+    "bin/*",
+    "out/*",
+    "src/*"
+  ],
+  "scripts": {
+    "prepack": "npm install --no-workspaces",
+    "pretest": "tsc --build",
+    "prepare": "tsc --build",
+    "build": "tsc --build",
+    "clean": "rm -rf ./out && tsc --build --clean",
+    "test": "node --test ./out/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LuvDaSun/ChatDemo.git"
+  },
+  "author": "LuvDaSun Software B.V.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuvDaSun/ChatDemo/issues"
+  },
+  "homepage": "https://www.LuvDaSun.software",
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/node": "^20.11.26",
+    "@types/yargs": "^17.0.32",
+    "chat-api-common": "*",
+    "chat-common-gql": "*",
+    "cors": "^2.8.5",
+    "graphql": "^16.8.1",
+    "graphql-yoga": "^5.1.1",
+    "tslib": "^2.6.2",
+    "type-fest": "^4.6.0",
+    "yargs": "^17.7.2"
+  }
+}

@@ -1,14 +1,16 @@
 {
   "private": true,
   "workspaces": [
-    "packages/ts/*"
+    "generated/npm/*",
+    "packages/npm/*"
   ],
   "scripts": {
     "spelling": "cspell",
-    "formatting": "prettier --check *"
+    "formatting": "prettier --check *",
+    "initialize": "node ./scripts/initialize.js"
   },
   "devDependencies": {
-    "cspell": "^8.1.3",
-    "prettier": "^3.1.1"
+    "cspell": "^8.6.0",
+    "prettier": "^3.2.5"
   }
 }

@@ -13,6 +13,7 @@ target/
 coverage/
 out/
 bundle/
+generated/
 
 !.vscode/
 !.github/
